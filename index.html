@@ -74,15 +74,143 @@ a.btn:focus-visible{outline:3px solid var(--red);outline-offset:3px}
     <div class="map"><iframe loading="lazy" title="Mapa del lugar" src="https://www.google.com/maps?q=Escazu+Costa+Rica&output=embed"></iframe></div>
   </section>
 
-  <section>
-    <h2>El lugar</h2>
-    <div class="gal">
-      <div class="ph"><em>🎃</em>Foto 1: entrada</div>
-      <div class="ph"><em>🕸️</em>Foto 2: salón</div>
-      <div class="ph"><em>🕯️</em>Foto 3: jardín</div>
-      <div class="ph"><em>👻</em>Foto 4: pista</div>
-    </div>
-  </section>
+ <style>
+  .reglas { max-width: 760px; margin: 0 auto; padding: 24px 16px; }
+  .reglas h2 { text-align: center; letter-spacing: .08em; }
+  .reglas .lead { text-align: center; opacity: .8; margin-bottom: 24px; }
+  .regla { border: 1px solid rgba(255,255,255,.15); border-left: 4px solid #c0392b;
+           border-radius: 10px; padding: 14px 18px; margin: 0 0 14px;
+           background: rgba(127,127,127,.08); }
+  .regla h3 { margin: 0 0 8px; font-size: 1.05rem; }
+  .regla ul { margin: 0; padding-left: 20px; }
+  .regla li { margin: 4px 0; }
+  .regla.final { border-left-color: #e67e22; text-align: center; }
+  .aviso { text-align: center; font-weight: 600; margin-top: 20px; }
+  .gal { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin-top: 28px; }
+</style>
+
+<section class="reglas">
+  <h2>💀🩸 REGLAMENTO — HALLOWEED PARTY 🩸💀</h2>
+  <p class="lead">Leé las reglas antes de venir. Son para que todos la pasemos bien.</p>
+
+  <article class="regla">
+    <h3>👻 1. Ingreso y registro</h3>
+    <ul>
+      <li>El ingreso es exclusivo para personas previamente inscritas y autorizadas.</li>
+      <li>No se permiten invitados sorpresa ni personas no registradas.</li>
+      <li>La organización podrá verificar la identidad y el registro de los asistentes.</li>
+    </ul>
+  </article>
+
+  <article class="regla">
+    <h3>🎃 2. Edad mínima</h3>
+    <ul>
+      <li>El evento es exclusivo para mayores de edad, se solicitará un documento de identificación.</li>
+      <li>Está prohibido falsificar información sobre la edad para ingresar.</li>
+    </ul>
+  </article>
+
+  <article class="regla">
+    <h3>🕸️ 3. Horarios y reingreso</h3>
+    <ul>
+      <li>El reingreso después de salir estará sujeto a la autorización de la organización.</li>
+      <li>Si necesitás salir, consultá previamente con el personal encargado.</li>
+    </ul>
+  </article>
+
+  <article class="regla">
+    <h3>🖤 4. Respeto y convivencia</h3>
+    <ul>
+      <li>No se tolerarán peleas, amenazas, acoso, discriminación ni agresiones de ningún tipo.</li>
+      <li>Respetá los límites personales y el espacio de los demás.</li>
+      <li>No presiones a nadie para participar en actividades que no quiera.</li>
+      <li>Cualquier conducta que comprometa la seguridad podrá ocasionar la expulsión del evento.</li>
+    </ul>
+  </article>
+
+  <article class="regla">
+    <h3>🩸 5. Consentimiento obligatorio</h3>
+    <ul>
+      <li>Bailar, besar, abrazar o tocar a otra persona requiere su consentimiento.</li>
+      <li>Un “no” significa NO, sin excepciones.</li>
+      <li>No se permite aprovecharse de alguien que esté bajo los efectos del alcohol o que no pueda dar su consentimiento.</li>
+    </ul>
+  </article>
+
+  <article class="regla">
+    <h3>💀 6. Disfraces y accesorios</h3>
+    <ul>
+      <li>No se permiten armas reales, objetos punzocortantes ni accesorios peligrosos.</li>
+      <li>El disfraz no es una excusa para incomodar o agredir a otras personas.</li>
+    </ul>
+  </article>
+
+  <article class="regla">
+    <h3>🔪 7. Objetos y sustancias prohibidas</h3>
+    <ul>
+      <li>Está prohibido ingresar armas, explosivos u objetos que representen un peligro.</li>
+      <li>No se permite ingresar artículos que puedan causar daños a los asistentes o al lugar.</li>
+      <li>La organización podrá denegar el ingreso de objetos considerados peligrosos.</li>
+    </ul>
+  </article>
+
+  <article class="regla">
+    <h3>🍷 8. Bebidas y consumo responsable</h3>
+    <ul>
+      <li>No presiones a nadie para beber ni alteres la bebida de otra persona.</li>
+    </ul>
+  </article>
+
+  <article class="regla">
+    <h3>📸 9. Fotos, videos y privacidad</h3>
+    <ul>
+      <li>Respetá la privacidad de los demás antes de publicar contenido.</li>
+      <li>No publiques imágenes íntimas, humillantes o comprometedoras de otra persona sin su consentimiento.</li>
+    </ul>
+  </article>
+
+  <article class="regla">
+    <h3>🦴 10. Cuidado del lugar y las pertenencias</h3>
+    <ul>
+      <li>Cuidá la decoración, el mobiliario, los equipos y las instalaciones.</li>
+      <li>No tomes pertenencias ajenas sin permiso.</li>
+      <li>Cada asistente es responsable de cuidar sus objetos personales.</li>
+    </ul>
+  </article>
+
+  <article class="regla">
+    <h3>🚫 11. Seguridad y emergencias</h3>
+    <ul>
+      <li>Si observás una pelea, un accidente o una situación peligrosa, avisá inmediatamente a la organización.</li>
+      <li>No dudes en pedir ayuda si vos o alguien más se siente mal.</li>
+    </ul>
+  </article>
+
+  <article class="regla">
+    <h3>🎶 12. Convivencia durante la fiesta</h3>
+    <ul>
+      <li>Mantené las áreas comunes limpias.</li>
+      <li>Ayudanos a que todas las personas puedan disfrutar de la noche.</li>
+    </ul>
+  </article>
+
+  <article class="regla">
+    <h3>👁️ 13. Autoridad de la organización</h3>
+    <ul>
+      <li>La organización podrá intervenir ante situaciones que comprometan la seguridad o el bienestar de los asistentes.</li>
+      <li>El incumplimiento de las reglas podrá ocasionar una advertencia, la denegación del ingreso o la expulsión del evento, según la gravedad.</li>
+    </ul>
+  </article>
+
+  <article class="regla final">
+    <h3>💀 14. La regla final</h3>
+    <p>Venimos a pasarla bien, bailar, conocer gente y disfrutar de una noche inolvidable. ¡Que el terror esté en los disfraces y no en el comportamiento!</p>
+  </article>
+
+  <p class="aviso">🩸 IMPORTANTE: Al registrarte y asistir al evento, aceptás respetar las reglas de convivencia y seguridad aquí establecidas.</p>
+
+</section>
+
 
   <section>
     <h2>Lo que te espera</h2>
